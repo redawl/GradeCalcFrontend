@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Main from './components/Main/Main';
 import Class from './components/Class/Class';
 import { Router, Routes, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
-import queryString from 'query-string';
 
 const history = createBrowserHistory();
 

@@ -1,5 +1,7 @@
 import React from "react";
 import AssignmentTable from './AssignmentTable';
+import Header from '../Header';
+import Footer from '../Footer';
 import queryString from 'query-string';
 
 class Class extends React.Component{
@@ -12,7 +14,12 @@ class Class extends React.Component{
 
     render(){
         return (
-            <AssignmentTable className={this.state.className}/>
+
+            <div>
+                <Header/>
+                <AssignmentTable className={this.state.className}/>
+                <Footer/>
+            </div>
         )
     }
 }

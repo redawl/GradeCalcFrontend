@@ -7,11 +7,11 @@ class AssignmentRow extends React.Component{
 
     render(){
         return (
-            <tr>
-                <td>{this.props.assignment.assignmentName}</td>
-                <td>{this.props.assignment.className}</td>
-                <td>{this.props.assignment.assignmentWeight}</td>
-                <td>{this.props.assignment.assignmentValue}</td>
+            <tr scope="row">
+                <td scope="col">{this.props.assignment.assignmentName}</td>
+                <td scope="col">{this.props.assignment.className}</td>
+                <td scope="col">{this.props.assignment.assignmentWeight}</td>
+                <td scope="col">{this.props.assignment.assignmentScore}</td>
             </tr>
         )
     }

@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import ClassRow from './ClassRow';
 
 class ClassTable extends React.Component {
@@ -17,21 +16,19 @@ class ClassTable extends React.Component {
         fetch('http://localhost:8080/api/class')
             .then(resp => resp.json())
             .then((classList) => {
-                console.log(classList)
                 this.setState({
                     classes: classList
                 })
-            })
-            .then(console.log(this.state.classes))
+            });
     }
 
     render () {
         return (
-            <table>
+            <table className="table table-hover" style={{margin: "auto", width: "50%", borderWidth: "2px"}}>
                 <thead>
                     <tr>
                         <th>Class Name</th>
-                        <th>Assignments</th>
+                        <th>Current Grade</th>
                     </tr>
                 </thead>
                 <tbody>

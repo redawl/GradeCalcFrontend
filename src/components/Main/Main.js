@@ -1,5 +1,8 @@
 import React from 'react';
 import ClassTable from './ClassTable';
+import Header from '../Header';
+import Footer from '../Footer';
+import AddAssignmentPopUp from '../AddAssignmentPopUp';
 
 
 class Main extends React.Component {
@@ -9,7 +12,12 @@ class Main extends React.Component {
 
     render(){
         return (
-            <ClassTable/>
+            <div>
+                <Header/>
+                <ClassTable/>
+                <AddAssignmentPopUp/>
+                <Footer/>
+            </div>
         )
     }
 }
